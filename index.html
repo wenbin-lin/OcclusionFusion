@@ -1,1 +1,155 @@
-project home page
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OcclusionFusion</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="https://wenbin-lin.github.io/OcclusionFusion/">OcclusionFusion</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#video">Video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#citation">Citation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+      
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+          <div class="container mt-5 mb-2">
+            <h1 class="text-center ">OcclusionFusion</h1>
+            <h4 class="text-center">Occlusion-aware Motion Estimation for Real-time Dynamic 3D Reconstruction</h4>
+            <div class="text-center container mb-3">
+              <p>
+                Wenbin Lin, Chengwei Zheng, Jun-Hai Yong, <a href="http://xufeng.site/">Feng Xu</a>
+                <br>
+                <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>
+              </p>
+              <p> CVPR 2022 </p>
+            </div>
+            <img src="images/live_demo.png" alt="" class="img-fluid mt-2 mb-2"> 
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="container">
+      <!--h2 class="text-center">Downloads</h2-->
+      <div class="row">
+        <div class="text-center col-4 mb-1">
+          <!--h3>Paper</h3-->
+          <div class="container mb-2" style="width: 30%"><img src="images/paper.svg" alt="Download Paper" class="card-img"/></div>
+          <a class="btn btn-danger btn-lg" href="https://github.com/wenbin-lin/OcclusionFusion/" role="button">Paper</a>
+        </div>
+        <div class="text-center col-4 mb-1">
+          <!--h3>Video</h3-->
+          <div class="container mb-2" style="width: 30%"><img src="images/video.svg" alt="Download Video" class="card-img"/></div>    
+          <a class="btn btn-info btn-lg" href="https://github.com/wenbin-lin/OcclusionFusion/" role="button">Video</a>
+        </div>
+        <div class="text-center col-4 mb-1">
+          <!--h3>Video</h3-->
+          <div class="container mb-2" style="width: 30%"><img src="images/code.svg" alt="Download Code" class="card-img"/></div>    
+          <a class="btn btn-success btn-lg" href="https://github.com/wenbin-lin/OcclusionFusion/" role="button">Code</a>
+        </div>
+      </div><hr>
+    </div>
+    
+    <div class="container">
+      <h2 class="text-center">Abstract</h2>
+      <div class="container">
+        <p>
+          RGBD-based real-time dynamic 3D reconstruction suffers from inaccurate inter-frame motion estimation as errors may accumulate with online tracking. This problem is even more severe for single-view-based systems due to strong occlusions. Based on these observations, we propose OcclusionFusion, a novel method to calculate occlusion-aware 3D motion to guide the reconstruction. In our technique, the motion of visible regions is first estimated and combined with temporal information to infer the motion of the occluded regions through an LSTM-involved graph neural network. Furthermore, our method computes the confidence of the estimated motion by modeling the network output with a probabilistic model, which alleviates untrustworthy motions and enables robust tracking. Experimental results on public datasets and our own recorded data show that our technique outperforms existing single-view-based real-time methods by a large margin. With the reduction of the motion errors, the proposed technique can handle long and challenging motion sequences.
+        </p>
+      </div>
+      <hr>
+    </div>
+      
+    <div class="container" id="video">
+      <h2 class="text-center">Video</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video controls>
+                <source src="" type="video/mp4">
+              </video>
+              <!--iframe class="embed-responsive-item" src="videos/camera ready.mp4"></iframe-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+      
+    <div class="container" id="citation">
+      <h2 class="text-center">Citation</h2>
+      <div class="container pt-3" style="background-color: #EEF0F2">
+        <pre class="mb-3 ml-3">
+@article{OcclusionFusion,
+} 
+        </pre>
+      </div>
+      <hr>
+    </div>
+      
+    <div class="container" id="acknowledgments">
+      <h2 class="text-center">Acknowledgments</h2>
+      <div class="container">
+          <p></p>
+      </div>
+      <hr>
+    </div>
+   
+    <div class="container" id="contact">
+      <h2 class="text-center">Contact Us</h2>
+      <div class="row">
+        <div class="col-lg-9 col-md-6 col-sm-6 mb-md-0 mb-2">
+          <address>
+            <strong>Tsinghua University</strong><br>
+            Beijing, China<br>
+            E-mail: <a href="mailto:lwb20@mails.tsinghua.edu.cn">lwb20@mails.tsinghua.edu.cn</a>
+          </address>
+        </div>
+        <div class="col-lg-3 col-12">
+          <a href="https://www.tsinghua.edu.cn/"><img src="images/tsinghua.png" alt="Tsinghua University" class="card-img-bottom"></a>
+        </div>
+      </div>
+    </div>
+    <hr> 
+      
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © Wenbin Lin. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>
