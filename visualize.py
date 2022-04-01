@@ -148,7 +148,7 @@ class Visualizer:
             self.render(frame_id)
 
     def render_to_video(self):
-        # self.render_all()
+        self.render_all()
 
         height = 480
         width = 480
