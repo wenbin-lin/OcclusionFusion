@@ -1,0 +1,10 @@
+numpy
+scipy
+imageio
+argparse
+tqdm
+opencv-python
+open3d
+# pytorch==1.8.0
+# cudatoolkit==10.2
+# torch-geometric==1.7.2
