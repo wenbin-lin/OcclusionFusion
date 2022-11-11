@@ -137,7 +137,8 @@ class Demo:
     def run_single_frame(self, frame_id):
         node_pos, curr_motion, historical_motion, edge_indices, down_sample_indices, up_sample_indices = self.preprocess(frame_id)
 
-        outputs = self.model(node_pos, curr_motion, historical_motion, edge_indices,down_sample_indices, up_sample_indices)
+        with torch.no_grad():
+            outputs = self.model(node_pos, curr_motion, historical_motion, edge_indices,down_sample_indices, up_sample_indices)
         outputs = outputs.detach().cpu().numpy()
         mu = outputs[:, :3]
         sigma = outputs[:, -1]
